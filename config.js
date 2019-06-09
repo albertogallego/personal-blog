@@ -1,10 +1,11 @@
 'use strict';
 
 module.exports = {
-  url: 'https:/albertogallego.net',
+  url: 'https:/albertogallego.me',
   title: 'Alberto Gallego',
   subtitle:
     'Software developer & remote advocate. Traveling and discovering gastronomy around the world.',
+  featuredImage: '/media/avatar.jpg',
   copyright: '© All rights reserved.',
   disqusShortname: '',
   postsPerPage: 5,

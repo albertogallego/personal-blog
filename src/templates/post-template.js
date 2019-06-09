@@ -3,24 +3,34 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Post from '../components/Post';
 import { useSiteMetadata } from '../hooks';
-import type { MarkdownRemark } from '../types';
 
-type Props = {
-  data: MarkdownRemark
-};
+const PostTemplate = ({ data }) => {
+  const {
+    title: siteTitle,
+    subtitle: siteSubtitle,
+    featuredImage: siteFeaturedImage,
+  } = useSiteMetadata();
+  const {
+    title: postTitle,
+    description: postDescription,
+    featuredImage: postFeaturedImage,
+  } = data.markdownRemark.frontmatter;
+  const metaDescription =
+    postDescription !== null ? postDescription : siteSubtitle;
 
-const PostTemplate = ({ data }: Props) => {
-  const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
-  const { title: postTitle, description: postDescription } = data.markdownRemark.frontmatter;
-  const metaDescription = postDescription !== null ? postDescription : siteSubtitle;
+  const featuredImage =
+    postFeaturedImage !== null ? postFeaturedImage : siteFeaturedImage;
 
   return (
-    <Layout title={`${postTitle} - ${siteTitle}`} description={metaDescription}>
+    <Layout
+      title={`${postTitle} - ${siteTitle}`}
+      description={metaDescription}
+      image={featuredImage}
+    >
       <Post post={data.markdownRemark} />
     </Layout>
   );
 };
-
 
 export const query = graphql`
   query PostBySlug($slug: String!) {
@@ -40,6 +50,5 @@ export const query = graphql`
     }
   }
 `;
-
 
 export default PostTemplate;

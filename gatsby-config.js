@@ -12,6 +12,7 @@ module.exports = {
     disqusShortname: siteConfig.disqusShortname,
     menu: siteConfig.menu,
     author: siteConfig.author,
+    featuredImage: siteConfig.featuredImage,
   },
   plugins: [
     {
@@ -182,7 +183,7 @@ module.exports = {
         background_color: '#FFF',
         theme_color: '#46a7ff',
         display: 'standalone',
-        icon: 'static/photo.jpg',
+        icon: 'static/avatar.jpg',
       },
     },
     'gatsby-plugin-offline',

@@ -27,12 +27,13 @@ const useSiteMetadata = () => {
             url
             title
             subtitle
+            featuredImage
             copyright
             disqusShortname
           }
         }
       }
-    `
+    `,
   );
 
   return site.siteMetadata;
