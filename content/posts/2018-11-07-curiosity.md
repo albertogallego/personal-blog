@@ -6,6 +6,7 @@ draft: false
 slug: /curiosity/
 featured_image: /images/curiosity/featured.jpg
 category: "Experiences"
+description: "Always I’ve been a person who prefers to do what I want in that moment more than what I should do. I’ve never been a good student, I’ve never done what the rest of my friends done (like going party every weekend)."
 tags:
   - Experiences
 ---
