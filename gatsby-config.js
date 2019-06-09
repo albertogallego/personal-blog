@@ -81,6 +81,7 @@ module.exports = {
                         template
                         draft
                         description
+                        featuredImage
                       }
                     }
                   }

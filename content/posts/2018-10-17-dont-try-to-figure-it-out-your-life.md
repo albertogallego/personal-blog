@@ -5,10 +5,13 @@ template: "post"
 draft: false
 description: Since we’re born we have a stupid pressure to know what we’re going to do in our lives or where we’re going to spend our time. This pressure makes people being sad and depressed. Most of the people feel lost and confused about what they’re going to do in their future.
 slug: /dont-try-to-figure-it-out-your-life/
+featuredImage: /media/dontTryToFigureItOutYourLife.jpg
 category: "Experiences"
 tags:
   - Experiences
 ---
+
+![](/media/dontTryToFigureItOutYourLife.jpg)
 
 Since we’re born, we have a stupid pressure to know what we’re going to do in our lives or where we’re going to spend our time. This pressure makes people being sad and depressed. Most of the people feel lost and confused about what they’re going to do in their future.
 

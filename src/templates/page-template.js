@@ -1,26 +1,35 @@
-// @flow
 import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Sidebar from '../components/Sidebar';
 import Page from '../components/Page';
 import { useSiteMetadata } from '../hooks';
-import type { MarkdownRemark } from '../types';
 
-type Props = {
-  data: {
-    markdownRemark: MarkdownRemark
-  }
-};
-
-const PageTemplate = ({ data }: Props) => {
-  const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
+const PageTemplate = ({ data }) => {
+  const {
+    title: siteTitle,
+    subtitle: siteSubtitle,
+    featuredImage: siteFeaturedImage,
+    url: siteUrl,
+  } = useSiteMetadata();
   const { html: pageBody } = data.markdownRemark;
-  const { title: pageTitle, description: pageDescription } = data.markdownRemark.frontmatter;
-  const metaDescription = pageDescription !== null ? pageDescription : siteSubtitle;
+  const {
+    title: pageTitle,
+    description: pageDescription,
+    slug: pageSlug,
+    featuredImage: pageFeaturedImage,
+  } = data.markdownRemark.frontmatter;
+  const metaDescription =
+    pageDescription !== null ? pageDescription : siteSubtitle;
+  const featuredImage = siteFeaturedImage || pageFeaturedImage;
 
   return (
-    <Layout title={`${pageTitle} - ${siteTitle}`} description={metaDescription}>
+    <Layout
+      title={`${pageTitle} - ${siteTitle}`}
+      description={metaDescription}
+      image={featuredImage}
+      url={siteUrl + pageSlug}
+    >
       <Sidebar />
       <Page title={pageTitle}>
         <div dangerouslySetInnerHTML={{ __html: pageBody }} />
@@ -38,6 +47,8 @@ export const query = graphql`
         title
         date
         description
+        slug
+        featuredImage
       }
     }
   }

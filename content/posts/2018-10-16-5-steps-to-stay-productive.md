@@ -5,11 +5,13 @@ template: "post"
 draft: false
 description: The truth is that the most important thing about productivity is spending time doing valuable things and not organising yourself. Here I’ll explain you a few tips that really work for me
 slug: /5-steps-to-stay-productive/
-featured_image: /images/5-steps-to-stay-productive/featured.jpeg
+featuredImage: /media/productive.jpeg
 category: "Productivity"
 tags:
   - Productivity
 ---
+
+![42-line-bible.jpg](/media/productive.jpeg)
 
 Always looking for ways to become more productive, all the tricks I had found on the Internet were really complex and they didn’t fit in with my lifestyle. The truth is that the most important thing about productivity is spending time doing valuable things and not organising yourself. Here I’ll explain you a few tips that really work for me:
 

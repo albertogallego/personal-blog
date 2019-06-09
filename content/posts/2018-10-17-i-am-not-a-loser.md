@@ -5,11 +5,13 @@ template: "post"
 draft: false
 description: I want to tell you something. I want to tell you an experience I lived in high school. I’ve never been a top student. I never studied too much, I preferred learning about other topics that I couldn’t learn there (I build a football blog with my friends, I learned how to use Photoshop to make photomontages, I wrote for an online newspaper called Vavel about football history moments…etc).
 slug: /i-am-not-a-loser/
-featured_image: /images/i-am-not-a-loser/featured.jpg
+featuredImage: /media/iAmNotALoser.jpg
 category: "Experiences"
 tags:
   - Experiences
 ---
+
+![](/media/iAmNotALoser.jpg)
 
 I want to tell you something. I want to tell you an experience I lived in high school. I’ve never been a top student. I never studied too much, I preferred learning about other topics that I couldn’t learn there (I build a football blog with my friends, I learned how to use Photoshop to make photomontages, I wrote for an online newspaper called Vavel about [football history moments](https://www.vavel.com/es/futbol-internacional/2011/08/12/premier-league/12120.html) …etc).
 

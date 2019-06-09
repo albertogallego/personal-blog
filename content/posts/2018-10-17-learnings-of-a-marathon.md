@@ -5,13 +5,13 @@ template: "post"
 draft: false
 description: Over a month ago I ran my first marathon. Yes, I could finish it successfully, but the most important is that I learned a lot of things I can now apply in my daily life.
 slug: /learnings-of-a-marathon/
-featured_image: /images/learnings-of-a-marathon/featured.jpeg
+featuredImage: /media/learningsOfAMarathon.jpeg
 category: "Experiences"
 tags:
   - Experiences
 ---
 
-
+![](/media/learningsOfAMarathon.jpeg)
 
 Over a month ago I ran my first marathon. I could finish it successfully, but the most important is that I learned a lot of things I can now apply in my daily life. Curious? Here we go!
 
@@ -21,5 +21,3 @@ Over a month ago I ran my first marathon. I could finish it successfully, but th
 - **The path to your goal is full of distractions, so have a clear vision of where you are going.** When you set a goal, you have to be 100% sure that you want to get it. Many people will ask you why are you doing this. And if you aren’t capable to answer this question without hesitating, in the end, you will give up.
 - **Trying is for the previous days. The big day use what you already know.** I remember I bought new shoes the week before the race, and I used them the previous week without having any trouble. So the race day I thought using them was a good idea. What happened? On the kilometer 20 my feet hurt me as hell. Error. On a big day, use things that you are used to use. For example, in technology, if you want to build a project to get money (and not just for learning) the best choice you can make is using a tool that you know well. You’ll be more productive and you’ll achieve your goal easier and faster.
 - **Surround yourself with people who love you, support you and only want the best for yourself.** And at this point I just wanted to say thank you to Mom, Dad, Lorena, Gonzalo, Ivan, Ana, Rubén, Josevi and Norma for supporting me and for being there on such a special day.
-
-{% twitter https://twitter.com/_albertogallego/status/972894882468712449 %}

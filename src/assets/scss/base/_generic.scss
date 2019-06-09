@@ -171,6 +171,11 @@ a {
   background: none;
 }
 
+img {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
 @include breakpoint-sm {
   figure.float-left,
   figure.float-right {

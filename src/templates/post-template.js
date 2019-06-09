@@ -9,23 +9,23 @@ const PostTemplate = ({ data }) => {
     title: siteTitle,
     subtitle: siteSubtitle,
     featuredImage: siteFeaturedImage,
+    url: siteUrl,
   } = useSiteMetadata();
   const {
     title: postTitle,
     description: postDescription,
     featuredImage: postFeaturedImage,
+    slug: postSlug,
   } = data.markdownRemark.frontmatter;
-  const metaDescription =
-    postDescription !== null ? postDescription : siteSubtitle;
-
-  const featuredImage =
-    postFeaturedImage !== null ? postFeaturedImage : siteFeaturedImage;
+  const metaDescription = postDescription || siteSubtitle;
+  const featuredImage = postFeaturedImage || siteFeaturedImage;
 
   return (
     <Layout
       title={`${postTitle} - ${siteTitle}`}
       description={metaDescription}
       image={featuredImage}
+      url={siteUrl + postSlug}
     >
       <Post post={data.markdownRemark} />
     </Layout>
@@ -46,6 +46,8 @@ export const query = graphql`
         description
         tags
         title
+        featuredImage
+        slug
       }
     }
   }
