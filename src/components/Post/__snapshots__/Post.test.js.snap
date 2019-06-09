@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Post renders correctly 1`] = `
+<div
+  className="post"
+>
+  <a
+    className="post__home-button"
+    href="/"
+  >
+    ← Go home
+  </a>
+  <div
+    className="post__content"
+  >
+    <div
+      className="content"
+    >
+      <h1
+        className="content__title"
+      >
+        test
+      </h1>
+      <div
+        className="content__body"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<p>test</p>",
+          }
+        }
+      />
+    </div>
+  </div>
+  <div
+    className="post__comments"
+  />
+</div>
+`;
